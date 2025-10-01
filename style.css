@@ -1,0 +1,75 @@
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.contenedor-conciertos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.banner{
+    border-radius: 10px;
+    text-align: center;  
+    padding: 20px;
+    background-size: cover;
+    background-position: center center;
+    /* display: grid;
+   grid-template-rows: auto auto auto; */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.card{
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    /* width: 33.3%-20px; */
+    flex: 1 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+.card.textos{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo{
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+.banner ul{
+    list-style: none;
+}
+
+.banner ul li{
+    margin: 15px;
+    font-weight: bold;
+}
+
+.banner .boton{
+   background: #ffd600;
+   display: block;
+   width: 100%;
+   font-weight: bold;
+   font-size: 14px;
+   text-align: center;
+   padding: 10px;
+   border: none;
+   border-radius: 100px;
+   font-family: 'roboto',sans-serif ;
+   cursor: pointer;
+}
